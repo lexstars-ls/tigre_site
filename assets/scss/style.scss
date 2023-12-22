@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+@import "header";
+@import "main";
+@import "footer";
+@import "var";
+@import "ipad";
+@import "portrait";
+@import "web";

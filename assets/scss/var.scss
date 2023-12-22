@@ -1,0 +1,19 @@
+$margintexte:10px;
+$font1:20px;
+$height1:50vh;
+$height2:70vh;
+$height3:200px;
+$height4:100vh;
+$background1:rgba(93, 241, 131, 255);
+$background2: #59b1ee;
+$center: center;
+$repeat: no-repeat;
+$button1: 200px;
+.bouton1 {
+    border: none;
+    border: solid white 2px;
+    padding: 20px 40px;
+    border-radius: $button1;
+    box-shadow: unset;
+    color: white;
+}

@@ -1,0 +1,100 @@
+.bouton1 {
+  border: none;
+  border: solid white 2px;
+  padding: 20px 40px;
+  border-radius: 200px;
+  box-shadow: unset;
+  color: white;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  header {
+    background-position: 0;
+  }
+  header nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav > ul li {
+    width: 200px;
+  }
+  header section h1 {
+    margin-top: 5%;
+  }
+  header section button {
+    margin-top: 2%;
+  }
+
+  main section {
+    display: flex;
+    justify-content: row;
+  }
+  main section .tigre2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    width: 500px;
+  }
+  main section article {
+    width: 600px;
+    margin-left: 20px;
+  }
+  main section article h2 {
+    text-align: start;
+    font-size: 30px;
+  }
+  main section article p {
+    margin-top: 20px;
+    height: 80%;
+    font-size: 25px;
+  }
+  main section:nth-of-type(2) {
+    height: 30vh;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main section:nth-of-type(2) img {
+    width: 35%;
+  }
+  main section:nth-of-type(2) button {
+    width: 40%;
+    padding: 10px 40px;
+    margin: 0;
+  }
+  main section:nth-of-type(3) {
+    padding: 2%;
+  }
+  main section:nth-of-type(3) .tigre4 {
+    height: 80vh;
+    width: 100%;
+  }
+  main section:nth-of-type(3) .tigre4 article button {
+    font-size: 45px;
+    width: 50%;
+    padding: 10px 50px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vh;
+  }
+  footer > * {
+    width: 25%;
+    display: block;
+  }
+  footer ul:first-of-type {
+    order: 1;
+    text-align: start;
+  }
+  footer button {
+    order: 2;
+  }
+  footer ul:last-of-type {
+    order: 3;
+  }
+}

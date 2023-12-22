@@ -1,0 +1,165 @@
+@media (min-device-width: 1181px) {
+  header {
+    height: 100vh;
+    width: 100%;
+    background-position-x: 0;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  header nav ul li {
+    display: block;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    text-align: center;
+  }
+  header nav ul li:first-of-type {
+    margin: auto 150px;
+    width: 250px;
+  }
+  header nav ul li:last-of-type {
+    display: none;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  header nav ul li a:hover {
+    color: black;
+  }
+  header section {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+  }
+  header section article {
+    width: 50%;
+  }
+  header section article h1 {
+    text-align: right;
+    margin-top: 0;
+    font-size: 40px;
+    letter-spacing: 2;
+  }
+  header section article p {
+    margin-top: 2%;
+    color: white;
+    font-size: 1em;
+    display: block;
+    text-align: start;
+  }
+  header section article button {
+    display: none;
+  }
+
+  main section:first-of-type {
+    gap: 100px;
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section .tigre2 {
+    width: 40%;
+    height: 50vh;
+  }
+  main section article:first-of-type {
+    margin: 0;
+    height: 70%;
+    width: 30%;
+    font-size: 2vh;
+    text-align: center;
+  }
+  main section article:first-of-type h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  main section:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+    padding: 20px 0;
+    position: relative;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+  main section:nth-of-type(2) img {
+    width: unset;
+    position: absolute;
+    bottom: -60px;
+    left: 60px;
+  }
+  main section:nth-of-type(2) article {
+    width: 50%;
+  }
+  main section:nth-of-type(2) article h2 {
+    display: block;
+    color: white;
+    font-size: 30px;
+  }
+  main section:nth-of-type(2) article button {
+    width: 40%;
+    font-size: 20px;
+    margin-top: 2%;
+  }
+  main section:last-of-type {
+    padding: 5%;
+    margin: 0;
+  }
+  main section:last-of-type .tigre4 {
+    height: 100vh;
+    background-size: cover;
+    background-position: 0;
+    width: 100%;
+    border-top: solid 25px black;
+    border-bottom: solid 25px black;
+    position: relative;
+  }
+  main section:last-of-type .tigre4 article {
+    position: absolute;
+    bottom: -25px;
+    background-color: rgba(198, 195, 195, 0.4);
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section:last-of-type .tigre4 article p {
+    display: block;
+    color: white;
+  }
+  main section:last-of-type .tigre4 article button {
+    width: unset;
+    padding: 20px 70px;
+    border-radius: 80px;
+    font-size: 1.5em;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: unset;
+  }
+  footer .logof {
+    display: block;
+    width: 10%;
+    order: 1;
+  }
+  footer button {
+    order: 3;
+    border: solid #05f5ec 2px;
+    margin: unset;
+  }
+  footer ul:first-of-type {
+    order: 2;
+  }
+  footer ul:last-of-type {
+    order: 4;
+    margin: 0;
+  }
+}

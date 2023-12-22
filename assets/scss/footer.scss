@@ -1,0 +1,45 @@
+@import "var";
+footer {
+    background-color: rgba(45, 53, 53, 255);
+    text-align: $center;
+    padding: 40px 50px;
+    color: white;
+    font-size: 20px;
+    .logof {
+        display: none;
+    }
+    button {
+        @extend .bouton1;
+        padding: 12px 40px !important;
+        border: solid #05f5ec 2px !important;
+        background-color: rgba(8, 131, 250, 255);
+        font-size: 20px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        &:first-of-type {
+            margin: 10px 0;
+        }
+        li:nth-of-type(2) {
+            margin: 10% 0;
+        }
+        &:last-of-type {
+            margin: 10% 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            li {
+                &:nth-of-type(2) {
+                    margin: 0 20px;
+                }
+                width: 15%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

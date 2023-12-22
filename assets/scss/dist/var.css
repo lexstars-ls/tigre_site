@@ -1,0 +1,8 @@
+.bouton1 {
+  border: none;
+  border: solid white 2px;
+  padding: 20px 40px;
+  border-radius: 200px;
+  box-shadow: unset;
+  color: white;
+}

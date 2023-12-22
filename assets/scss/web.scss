@@ -1,0 +1,171 @@
+@media (min-device-width: 1181px) {
+    header {
+        height: 100vh;
+        width: 100%;
+        background-position-x: 0;
+        nav {
+            ul {
+                display: flex;
+                flex-direction: row;
+                li {
+                    display: block;
+                    color: white;
+                    font-size: 30px;
+                    width: 200px;
+                    text-align: center;
+                    &:first-of-type {
+                        margin: auto 150px;
+                        width: 250px;
+                    }
+                    &:last-of-type {
+                        display: none;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        &:hover {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        section {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 5%;
+            article {
+                width: 50%;
+                h1 {
+                    text-align: right;
+                    margin-top: 0;
+                    font-size: 40px;
+                    letter-spacing: 2;
+                }
+                p {
+                    margin-top: 2%;
+                    color: white;
+                    font-size: 1em;
+                    display: block;
+                    text-align: start;
+                }
+                button {
+                    display: none;
+                }
+            }
+        }
+    }
+    main {
+        section {
+            &:first-of-type {
+                gap: 100px;
+                margin: 100px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .tigre2 {
+                width: 40%;
+                height: 50vh;
+            }
+            article:first-of-type {
+                margin: 0;
+                height: 70%;
+                width: 30%;
+                font-size: 2vh;
+                text-align: center;
+                h2 {
+                    font-size: 35px;
+                    margin-bottom: 25px;
+                }
+            }
+            &:nth-of-type(2) {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                padding: 0;
+                padding: 20px 0;
+                position: relative;
+                padding-right: 5%;
+                padding-top: 5%;
+                img {
+                    width: unset;
+                    position: absolute;
+                    bottom: -60px;
+                    left: 60px;
+                }
+                article {
+                    width: 50%;
+                    h2 {
+                        display: block;
+                        color: white;
+                        font-size: 30px;
+                    }
+                    button {
+                        width: 40%;
+                        font-size: 20px;
+                        margin-top: 2%;
+                    }
+                }
+            }
+            &:last-of-type {
+                padding: 5%;
+                margin: 0;
+                .tigre4 {
+                    height: 100vh;
+                    background-size: cover;
+                    background-position: 0;
+                    width: 100%;
+                    border-top: solid 25px black;
+                    border-bottom: solid 25px black;
+                    position: relative;
+                    article {
+                        position: absolute;
+                        bottom: -25px;
+                        background-color: hsla(0, 3%, 77%, 0.4);
+                        height: 20%;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        p {
+                            display: block;
+                            color: white;
+                        }
+                        button {
+                            width: unset;
+                            padding: 20px 70px;
+                            border-radius: 80px;
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: unset;
+        .logof {
+            display: block;
+            width: 10%;
+            order: 1;
+        }
+        button {
+            order: 3;
+            border: solid #05f5ec 2px;
+            margin: unset;
+        }
+        ul {
+            &:first-of-type {
+                order: 2;
+            }
+            &:last-of-type {
+                order: 4;
+                margin: 0;
+            }
+        }
+    }
+}

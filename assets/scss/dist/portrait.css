@@ -1,0 +1,45 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  body::after {
+    content: "Passez votre tablette en mode paysage";
+    font-size: 55px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding-top: 80vh;
+    padding-bottom: 20vh;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  body::before {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: white;
+    background-image: url(../image/WWF-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

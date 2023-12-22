@@ -1,0 +1,98 @@
+@import "var";
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+    header {
+        background-position: 0;
+        nav {
+            >ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                li {
+                    width: 200px;
+                }
+            }
+        }
+        section {
+            h1 {
+                margin-top: 5%;
+            }
+            button {
+                margin-top: 2%;
+            }
+        }
+    }
+    main {
+        section {
+            display: flex;
+            justify-content: row;
+            .tigre2 {
+                background-repeat: $repeat;
+                background-position: center;
+                height: 40vh;
+                width: 500px;
+            }
+            article {
+                width: 600px;
+                margin-left: 20px;
+                h2 {
+                    text-align: start;
+                    font-size: 30px;
+                }
+                p {
+                    margin-top: 20px;
+                    height: 80%;
+                    font-size: 25px;
+                }
+            }
+            &:nth-of-type(2) {
+                height: 30vh;
+                padding: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                img {
+                    width: 35%;
+                }
+                button {
+                    width: 40%;
+                    padding: 10px 40px;
+                    margin: 0;
+                }
+            }
+            &:nth-of-type(3) {
+                padding: 2%;
+                .tigre4 {
+                    height: 80vh;
+                    width: 100%;
+                    article {
+                        button {
+                            font-size: 45px;
+                            width: 50%;
+                            padding: 10px 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 30vh;
+        >* {
+            width: 25%;
+            display: block;
+        }
+        ul:first-of-type {
+            order: 1;
+            text-align: start;
+        }
+        button {
+            order: 2;
+        }
+        ul:last-of-type {
+            order: 3;
+        }
+    }
+}

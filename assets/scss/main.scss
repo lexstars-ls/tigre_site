@@ -1,0 +1,73 @@
+@import "var";
+main {
+    section {
+        margin: 30px;
+        .tigre2 {
+            background-image: url(../img/tigre3.png);
+            background-size: cover;
+            background-repeat: $repeat;
+            background-position: center;
+            height: $height3;
+        }
+        article {
+            text-align: $center;
+            h2 {
+                margin-top: $margintexte;
+                font-size: 18px;
+            }
+            p {
+                margin-top: $margintexte;
+                text-align: start;
+            }
+        }
+        &:nth-of-type(2) {
+            margin: 0;
+            background-color: $background1;
+            padding: 20px 0;
+            text-align: $center;
+            padding: 10%;
+            img {
+                width: 100%;
+            }
+            h2 {
+                display: none;
+            }
+            button {
+                margin-top: 5%;
+                @extend .bouton1;
+                background-color: $background2;
+                color: white;
+                font-size: $font1;
+            }
+        }
+        &:nth-of-type(3) {
+            margin: 30px 0;
+            .tigre4 {
+                background-image: url(../image/tigre4.jpg);
+                background-size: cover;
+                background-color: hsla(0, 0%, 81%, 0.264);
+                background-blend-mode: lighten;
+                background-repeat: $repeat;
+                height: $height2;
+                position: relative;
+                article {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                    p {
+                        display: none;
+                    }
+                    button {
+                        width: 80%;
+                        @extend .bouton1;
+                        background-color: #131b1b;
+                        color: white;
+                        font-size: $font1;
+                    }
+                }
+            }
+        }
+    }
+}
